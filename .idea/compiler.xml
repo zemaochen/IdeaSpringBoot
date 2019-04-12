@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="crudrepositorytest" />
+        <module name="jsontest" />
+        <module name="jsptest" />
+        <module name="logintest" />
+        <module name="testjsp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="crudrepositorytest" target="8" />
+      <module name="jsontest" target="1.7" />
+      <module name="jsptest" target="1.7" />
+      <module name="logintest" target="1.8" />
+      <module name="testjsp" target="1.8" />
+      <module name="thymeleaftest" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="crudrepositorytest" options="-parameters" />
+      <module name="logintest" options="-parameters" />
+      <module name="testjsp" options="-parameters" />
+      <module name="thymeleaftest" options="-parameters" />
+    </option>
+  </component>
+</project>

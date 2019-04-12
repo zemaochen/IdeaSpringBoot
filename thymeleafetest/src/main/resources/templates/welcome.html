@@ -1,0 +1,30 @@
+<!DOCTYPE html>  
+<html xmlns:th="http://www.thymeleaf.org">  
+<head>  
+    <title>显示学生信息</title>  
+    <meta charset="UTF-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>  
+   <link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{css/bootstrap-theme.min.css}"/> 
+<script type="text/javascript" th:src="@{js/jquery-3.3.1.min.js}"></script>
+<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+</head>  
+<body>  
+<div class="container">  
+    <div class="row">  
+        <div class="col-md-5">  
+            <div class="panel panel-primary">  
+                <div class="panel-heading text-center">  
+                    <span class="panel-title">成都大学</span>  
+                </div>  
+                <div class="panel-body">  
+                    <span th:text="#{cdu.welcome(${name})}"></span>  
+                </div>  
+                <div class="panel-footer text-right">  
+                    <span class="panel-title">sss@10</span>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+</div>  
+</body>  

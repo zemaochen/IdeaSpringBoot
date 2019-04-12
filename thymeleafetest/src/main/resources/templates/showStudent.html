@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>显示学生信息</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{css/bootstrap-theme.min.css}" />
+<script type="text/javascript" th:src="@{js/jquery-3.3.1.min.js}"></script>
+<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading text-center">
+						<span class="panel-title">学生信息</span>
+					</div>
+					<div class="panel-body">
+						编号：<span th:text="#{student.id}">2</span><br/>
+						姓名：<span th:text="#{student.name}">sss</span><br/>
+						性别：<span th:text="#{student.gender}">男</span><br/>
+						年龄：<span th:text="#{student.age}">20</span><br/>
+						电话：<span th:text="#{student.telephone}">123456</span><br/>
+					</div>
+					<div class="panel-footer text-right">
+						<span class="panel-title">cdu@10</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
