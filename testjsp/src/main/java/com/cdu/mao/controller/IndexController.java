@@ -24,6 +24,7 @@ public class IndexController {
 		books.add(new Book(5, "疯狂Ajax开发", "ajax.jpg", "李刚 编著", 79.00));
 		// 保存数据到model
 		model.addAttribute("books", books);
+		System.out.println("-----------------------------------------");
 		return "index";
 	}
 }

@@ -1,0 +1,33 @@
+!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Springboot自动转换json数据</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{css/bootstrap-theme.min.css}"/>
+    <script type="text/javascript" th:src="@{js/jquery-1.11.0.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            findBooks();
+        })
+        function findBooks(){
+            $.post("/findBooks",null,
+                function (data) {
+                    $.each(data,function () {
+                        var tr = $("<tr align='center'/>");
+                        $("<img/>").attr("src","images/"+this.image)
+                            .attr("height",60).appendTo("<td/>").appendTo(tr);
+                        $("<td/>")
+                    })
+                }
+            )
+        }
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/crudrepositorytest/crudrepositorytest.iml" filepath="$PROJECT_DIR$/crudrepositorytest/crudrepositorytest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jsontest/jsontest.iml" filepath="$PROJECT_DIR$/jsontest/jsontest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jsptest/jsptest.iml" filepath="$PROJECT_DIR$/jsptest/jsptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/thymeleafetest/logintest.iml" filepath="$PROJECT_DIR$/thymeleafetest/logintest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testjson/testjson.iml" filepath="$PROJECT_DIR$/testjson/testjson.iml" />
       <module fileurl="file://$PROJECT_DIR$/testjsp/testjsp.iml" filepath="$PROJECT_DIR$/testjsp/testjsp.iml" />
     </modules>
   </component>
