@@ -19,6 +19,14 @@ public class Book implements Serializable {
         this.remark = remark;
     }
 
+    public Book(Integer id, String name, String author, String image, Double price) {
+        this.id = id;
+        this.name = name;
+        this.author = author;
+        this.image = image;
+        this.price = price;
+    }
+
     public Book() {
     }
 

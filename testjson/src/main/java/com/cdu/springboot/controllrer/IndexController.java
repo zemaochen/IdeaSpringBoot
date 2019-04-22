@@ -9,4 +9,8 @@ public class IndexController {
     public String index(){
         return "index";
     }
+    @RequestMapping("/getjson")
+    public String getjson(){
+        return "getjson";
+    }
 }

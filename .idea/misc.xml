@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/thymeleafetest/pom.xml" />
         <option value="$PROJECT_DIR$/testjsp/pom.xml" />
         <option value="$PROJECT_DIR$/testjson/pom.xml" />
+        <option value="$PROJECT_DIR$/testfileupload/pom.xml" />
       </list>
     </option>
   </component>

@@ -13,21 +13,49 @@
             findBooks();
         })
         function findBooks(){
-            $.post("/findBooks",null,
+            $.post("/findBooks?author=李刚",null,
                 function (data) {
                     $.each(data,function () {
                         var tr = $("<tr align='center'/>");
                         $("<img/>").attr("src","images/"+this.image)
                             .attr("height",60).appendTo("<td/>").appendTo(tr);
-                        $("<td/>")
+                        $("<td/>").html(this.name).appendTo(tr);
+                        $("<td/>").html(this.author).appendTo(tr);
+                        $("#booktable").append(tr);
                     })
-                }
-            )
+                },"json"
+            );
         }
     </script>
-
 </head>
 <body>
-
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Spring Boot 中集合转化</h3>
+    </div>
+</div>
+<div class="container">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">图书信息列表信息</h3>
+            </div>
+            <div class="panel-body">
+                <div class="table table-responsive">
+                    <table class="table table-bordered table-hover" id="booktable">
+                        <thead>
+                        <tr>
+                            <th class="text-center">封面</th>
+                            <th class="text-center">书名</th>
+                            <th class="text-center">作者</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-center"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

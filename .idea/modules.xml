@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/thymeleafetest/logintest.iml" filepath="$PROJECT_DIR$/thymeleafetest/logintest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testfileupload/testfileupload.iml" filepath="$PROJECT_DIR$/testfileupload/testfileupload.iml" />
       <module fileurl="file://$PROJECT_DIR$/testjson/testjson.iml" filepath="$PROJECT_DIR$/testjson/testjson.iml" />
       <module fileurl="file://$PROJECT_DIR$/testjsp/testjsp.iml" filepath="$PROJECT_DIR$/testjsp/testjsp.iml" />
     </modules>
