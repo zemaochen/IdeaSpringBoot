@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="logintest" />
+        <module name="testcrudrepository" />
+        <module name="testexceptionhandler" />
         <module name="testfileupload" />
         <module name="testjson" />
         <module name="testjsp" />
@@ -17,6 +19,8 @@
       <module name="jsontest" target="1.7" />
       <module name="jsptest" target="1.8" />
       <module name="logintest" target="1.8" />
+      <module name="testcrudrepository" target="1.8" />
+      <module name="testexceptionhandler" target="1.8" />
       <module name="testfileupload" target="1.8" />
       <module name="testjson" target="1.8" />
       <module name="testjsp" target="1.8" />
@@ -28,6 +32,8 @@
       <module name="crudrepositorytest" options="-parameters" />
       <module name="jsptest" options="-parameters" />
       <module name="logintest" options="-parameters" />
+      <module name="testcrudrepository" options="-parameters" />
+      <module name="testexceptionhandler" options="-parameters" />
       <module name="testfileupload" options="-parameters" />
       <module name="testjson" options="-parameters" />
       <module name="testjsp" options="-parameters" />

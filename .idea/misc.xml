@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/testjsp/pom.xml" />
         <option value="$PROJECT_DIR$/testjson/pom.xml" />
         <option value="$PROJECT_DIR$/testfileupload/pom.xml" />
+        <option value="$PROJECT_DIR$/testexceptionhandler/pom.xml" />
+        <option value="$PROJECT_DIR$/testcrudrepository/pom.xml" />
       </list>
     </option>
   </component>

@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
@@ -14,6 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.net.URLDecoder;
+import java.net.URLEncoder;
 
 @Controller
 public class FileUploadController {
@@ -73,28 +75,35 @@ public class FileUploadController {
             return "error";
         }
     }
-    @RequestMapping("/download")
+
+    @RequestMapping(value="/download")
     public ResponseEntity<byte[]> download(HttpServletRequest request,
                                            @RequestParam("filename") String filename,
-                                           @RequestParam("User-Agent") String userAgent,
+                                           @RequestHeader("User-Agent") String userAgent,
                                            Model model)throws Exception{
-        //下载文件路径
-        String path = request.getSession().getServletContext().getRealPath("/upload/");
-        //构建file
-        File file = new File(path+File.separator+filename);
-        //ok表示http中的200状态
+        // 下载文件路径
+        String path = request.getServletContext().getRealPath(
+                "/upload/");
+        // 构建File
+        File file = new File(path+File.separator+ filename);
+        // ok表示Http协议中的状态 200
         ResponseEntity.BodyBuilder builder = ResponseEntity.ok();
-        //内容长度
+        // 内容长度
         builder.contentLength(file.length());
-        //application/octet-stream:二进制数据流（最常见的数据流）
+        // application/octet-stream ： 二进制流数据（最常见的文件下载）。
         builder.contentType(MediaType.APPLICATION_OCTET_STREAM);
-        //使用URLDecoder.decode对文件进行解码
-        filename = URLDecoder.decode(filename,"UTF-8");
-        if (userAgent.indexOf("MSIE")>0){
-            builder.header("Content-Disposition","attachment; filename="+filename);
-        }else{
-            builder.header("Content-Disposition","attachment; filename*=UTF-8''"+filename);
+        // 使用URLDecoder.decode对文件名进行解码
+        filename = URLEncoder.encode(filename, "UTF-8");
+        // 设置实际的响应文件名，告诉浏览器文件要用于【下载】、【保存】attachment 以附件形式
+        // 不同的浏览器，处理方式不同，要根据浏览器版本进行区别判断
+        if (userAgent.indexOf("MSIE") > 0) {
+            // 如果是IE，只需要用UTF-8字符集进行URL编码即可
+            builder.header("Content-Disposition", "attachment; filename=" + filename);
+        } else {
+            // 而FireFox、Chrome等浏览器，则需要说明编码的字符集
+            // 注意filename后面有个*号，在UTF-8后面有两个单引号！
+            builder.header("Content-Disposition", "attachment; filename*=UTF-8''" + filename);
         }
-        return  builder.body(FileUtils.readFileToByteArray(file));
+        return builder.body(FileUtils.readFileToByteArray(file));
     }
 }
