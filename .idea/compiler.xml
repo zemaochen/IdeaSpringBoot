@@ -12,6 +12,8 @@
         <module name="testfileupload" />
         <module name="testjson" />
         <module name="testjsp" />
+        <module name="testpagingandsortingrepository" />
+        <module name="testsimplespringdatajpa" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +26,8 @@
       <module name="testfileupload" target="1.8" />
       <module name="testjson" target="1.8" />
       <module name="testjsp" target="1.8" />
+      <module name="testpagingandsortingrepository" target="1.8" />
+      <module name="testsimplespringdatajpa" target="1.8" />
       <module name="thymeleaftest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -37,6 +41,8 @@
       <module name="testfileupload" options="-parameters" />
       <module name="testjson" options="-parameters" />
       <module name="testjsp" options="-parameters" />
+      <module name="testpagingandsortingrepository" options="-parameters" />
+      <module name="testsimplespringdatajpa" options="-parameters" />
       <module name="thymeleaftest" options="-parameters" />
     </option>
   </component>

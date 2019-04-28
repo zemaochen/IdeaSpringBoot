@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/testfileupload/testfileupload.iml" filepath="$PROJECT_DIR$/testfileupload/testfileupload.iml" />
       <module fileurl="file://$PROJECT_DIR$/testjson/testjson.iml" filepath="$PROJECT_DIR$/testjson/testjson.iml" />
       <module fileurl="file://$PROJECT_DIR$/testjsp/testjsp.iml" filepath="$PROJECT_DIR$/testjsp/testjsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testpagingandsortingrepository/testpagingandsortingrepository.iml" filepath="$PROJECT_DIR$/testpagingandsortingrepository/testpagingandsortingrepository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testsimplespringdatajpa/testsimplespringdatajpa.iml" filepath="$PROJECT_DIR$/testsimplespringdatajpa/testsimplespringdatajpa.iml" />
     </modules>
   </component>
 </project>
