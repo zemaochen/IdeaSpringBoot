@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/testcrudrepository/pom.xml" />
         <option value="$PROJECT_DIR$/testpagingandsortingrepository/pom.xml" />
         <option value="$PROJECT_DIR$/testsimplespringdatajpa/pom.xml" />
+        <option value="$PROJECT_DIR$/testspringdatajpaquery/pom.xml" />
       </list>
     </option>
   </component>

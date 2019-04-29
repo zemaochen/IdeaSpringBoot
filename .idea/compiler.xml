@@ -14,6 +14,7 @@
         <module name="testjsp" />
         <module name="testpagingandsortingrepository" />
         <module name="testsimplespringdatajpa" />
+        <module name="testspringdatajpaquery" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +29,7 @@
       <module name="testjsp" target="1.8" />
       <module name="testpagingandsortingrepository" target="1.8" />
       <module name="testsimplespringdatajpa" target="1.8" />
+      <module name="testspringdatajpaquery" target="1.8" />
       <module name="thymeleaftest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -43,6 +45,7 @@
       <module name="testjsp" options="-parameters" />
       <module name="testpagingandsortingrepository" options="-parameters" />
       <module name="testsimplespringdatajpa" options="-parameters" />
+      <module name="testspringdatajpaquery" options="-parameters" />
       <module name="thymeleaftest" options="-parameters" />
     </option>
   </component>

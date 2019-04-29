@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/testjsp/testjsp.iml" filepath="$PROJECT_DIR$/testjsp/testjsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/testpagingandsortingrepository/testpagingandsortingrepository.iml" filepath="$PROJECT_DIR$/testpagingandsortingrepository/testpagingandsortingrepository.iml" />
       <module fileurl="file://$PROJECT_DIR$/testsimplespringdatajpa/testsimplespringdatajpa.iml" filepath="$PROJECT_DIR$/testsimplespringdatajpa/testsimplespringdatajpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testspringdatajpaquery/testspringdatajpaquery.iml" filepath="$PROJECT_DIR$/testspringdatajpaquery/testspringdatajpaquery.iml" />
     </modules>
   </component>
 </project>
